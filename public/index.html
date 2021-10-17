@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@200;300;600&family=Sacramento&display=swap" rel="stylesheet">
@@ -14,103 +15,101 @@
         <table cellspacing="20">
             <tr>
               <td><h1><strong>Nicolai Calincov</strong></h1>
-                  <p><em>Student, 2nd year, <strong>UTM.</strong></em></p>
+                <p class="fw-bold text-warning"><em>Student, 2nd year, UTM.</em></p>
                   <q>Build a future where people live in harmony with nature.</q>
-                  <aside><h4>Web Dev</h4></aside></td>
+                  <p class="fw-bold text-warning">Web Dev</p></td>
             </tr>
           </table>
-        <br>
         <h1>CV / Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#about" class="link-warning">About</a></li>
+                <li><a href="#skills" class="link-warning">Skills</a></li>
+                <li><a href="#experience" class="link-warning">Experience</a></li>
+                <li><a href="#contacts" class="link-warning">Contacts</a></li>
             </ul>
         </nav>
     </header>
-    <br>
     <main>
         <div class="left-section">
             <section id="about">
                 <h2>About</h2>
                 <img src="niko-modified.png" width="200" height="200" alt="Niko profile picture">
-                <p>My passion is web development and design. Like a lot running, boxing, listening to music, watching movies and chatting with people&#10084;.</p>
+                <p>My passion is web development and design. Like a lot jogging, boxing, listening to music, watching movies and chatting with people&#10084;.</p>
             </section>
         </div>
 
         <br>
-        <div class="right-section">
+        <div class="container-lg">
         <section id="skills">
-            <h2>Skills</h2>
-            <table cellspacing="10">
-                <tr>
-                    <td>HTML</td>
-                    <td>⭐⭐⭐⭐</td>
-                   </tr>
-                  <tr>
-                      <td>CSS</td>
-                      <td>⭐⭐⭐</td>
-                     </tr>
-                    <tr>
-                        <td>JS</td>
-                        <td>⭐⭐</td>
-                       </tr>
-                      <tr>
-                          <td>Photoshop</td>
-                          <td>⭐⭐⭐⭐⭐</td>
-                        </tr>
-                         <tr>
-                            <td>Adobe Premier Pro</td>
-                            <td>⭐⭐⭐</td>
-                        </tr>
-                           <tr>
-                               <td>Adobe After Effects</td>
-                               <td>⭐⭐⭐</td>
-                            </tr>
-            </table>
+            <div class="container-lg">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-5 text-center text-md-start">
+                        <h2>
+                            <div class="display-2">Skills</div>
+                        </h2>
+                        <p class="lead my-2 text-muted">HTML                       ⭐⭐⭐⭐</p>
+                        <p class="lead my-2 text-muted">CSS                        ⭐⭐⭐</p>
+                        <p class="lead my-2 text-muted">JS                         ⭐⭐</p>
+                        <p class="lead my-2 text-muted">Photoshop                  ⭐⭐⭐⭐</p>
+                        <p class="lead my-2 text-muted">Adobe Premier Pro          ⭐⭐⭐⭐</p>
+                        <p class="lead my-2 text-muted">Adobe After Effects        ⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="col-md-5 text-center d-none d-md-block">
+                        <img src="skills.png" alt="skills" class="img-fluid">
+                    </div>
+                </div>
+            </div>
         </section>
+
         <hr>
+
         <section id="experience">
-            <h2>Experience</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Period</th>
-                        <th>Place</th>
-                        <th>Position/Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2021-2022</td>
-                        <td>BEST Chisinau</td>
-                        <td>
-                            <section>
-                                <h3>Vicepresident PR</h3>
-                                <p>I'm the main responsible for Public Relations department in non-governamental organization BEST Chisinau.</p>
-                            </section>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2020-2021</td>
-                        <td>BEST Chisinau</td>
-                        <td>
-                            <details>
-                                <summary>Position 1</summary>
-                                <p>Full member.</p>
-                            </details>
-                            <details>
-                                <summary>Position 2</summary>
-                                <p>Design responsible for EBEC 2020.</p>
-                            </details>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2>
+            <div class="display-2">Experience</div>
+        </h2>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Period</th>
+                <th scope="col">Place</th>
+                <th scope="col">Position/Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>2021-2022</td>
+                <td>BEST Chisinau</td>
+                <td>
+                    <section>
+                        <h3>Vicepresident PR</h3>
+                        <p>I'm the main responsible for Public Relations department in non-governamental organization BEST Chisinau.</p>
+                    </section>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>2020-2021</td>
+                <td>BEST Chisinau</td>
+                <td>
+                    <details>
+                        <summary>Position 1</summary>
+                        <p>Full member.</p>
+                    </details>
+                    <details>
+                        <summary>Position 2</summary>
+                        <p>Design responsible for EBEC 2020.</p>
+                    </details>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
+
         <hr>
+
         <section id="contacts">
             <h2>Contacts</h2>
             <ul>
@@ -127,11 +126,52 @@
                 </li>
                 <li>Website link: https://i-am-fine.com</li>
             </ul>
-            <div class="contact-me">
-                <h2>Get In Touch</h2>
-                <a href="mailto:nicolai.calincov@gmail.com" class="BUTTON_OFP">CONTACT ME</a>
-              </div>
         </section>
+        <h2>Get In Touch</h2>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="John" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Doe" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+        </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="liveToastBtn">Submit</button>
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="..." class="rounded me-2" alt="...">
+                  <strong class="me-auto">Bootstrap</strong>
+                  <small>a second ago</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+        </div>
+        </form>
         <iframe width="711" height="400" src="https://www.youtube.com/embed/x3bfa3DZ8JM?list=RDuQFVqltOXRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br>
         <audio controls>
@@ -148,5 +188,7 @@
             Copyright &copy; 2021, Nicolai Calincov
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
